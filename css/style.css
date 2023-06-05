@@ -1,0 +1,1207 @@
+/*ESTILO PRINCIPAL*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+:root{
+--global-primary-color: #DDFFBC;
+--secondary-color: #b4b4b4;
+--button-color: #52734D;
+}
+
+/*GRADIENE COLOR HOME
+background-color: #91c788;
+background-image: linear-gradient(180deg, #91c788 39%, #ddffbc 73%, #ffffff 100%);
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    font-family: 'Nunito Regular', sans-serif;
+}
+
+img{
+    display: block;
+}
+
+/********************************ESTILOS GERAIS********************************/
+.container-page{
+    position: relative;
+    height: 100%;
+}
+
+.container-page .container-header{
+    position: absolute;
+    width: 100%;
+    background-color: #82AC9F;
+}
+
+.container-page section.page-bar{
+    height: 56px;
+    padding: 0 30px;
+    display: flex;
+} 
+
+section.page-bar .return-icon{
+    width: 48px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+section.page-bar .return-icon img{
+    width: 14px;
+}
+
+section.page-bar .page-tittle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+section.page-bar .page-tittle p{
+    display: inline-block;
+    margin-left: -48px;
+    font-family: 'Nunito ExtraBold', sans-serif;
+    font-size: 20px;
+} 
+
+/*Formulário*/
+.input-group{
+    position: relative;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.input-field{
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    padding: 0 48px;
+    border: none;
+}
+
+.input-field:focus{
+    outline: none;
+}
+
+.input-icon-left img,
+.input-icon-right img{
+    display: block;
+    height: 20px;
+}
+
+.input-icon-left{
+    height: 100%;
+    position: absolute;
+    left: 16px;
+    display: flex;
+    align-items: center;
+}
+.input-icon-right{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.input-field::placeholder{
+    font-family: 'Nunito SemiBold', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+
+.page-login_register .input-group-container input,
+.booking-page .input-group-container input{
+    border-radius: 8px;
+    border: 1px solid #000;
+}
+/*Botão*/
+.global-button{
+    height: 48px;
+    width: 100%;
+    font-family: 'Nunito ExtraBold', sans-serif;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #496E62;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Linha de Separação*/
+hr{
+    width: 100%;
+    position: absolute;
+    border-radius: 8px;
+    border: 1px solid #00000093;
+    height: 1px;
+}
+
+/*Barra de Navegação*/
+.nav-container{
+    width: 100%;
+    height: 68px;
+    position: absolute;
+    bottom: 0;
+    background-color: #82AC9F;/*******************************************************************/
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.nav-bar ul li{
+    list-style: none;
+    text-align: center;
+}
+
+.nav-bar ul li a{
+    display: block;
+    text-decoration: none;
+}
+
+.nav-bar ul li a img{
+    height: 28px;
+}
+
+.modal-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*Modal*/
+.modal{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #82AC9F;
+}
+
+.modal-header{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.modal-header p{
+    width: 100%;
+    font-family: 'Nunito Bold', sans-serif;
+    font-size: 20px;
+}
+
+.modal-header span{
+    display: flex;
+    align-items: center;
+}
+
+.modal-header img{
+    height: 20px;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal-content .input-group .input-field{
+    padding: 0 4px 0 16px;
+}
+
+.modal-content .input-group .button-icon-right{
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.modal-content img{
+    height: 24px;
+}
+
+.modal .dividing-line{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .dividing-line p{
+    display: inline-block;
+    background-color: #82AC9F;
+}
+
+.modal-content .global-button{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #000000;
+}
+
+#reserva .modal-content>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#reserva .dividing-line{
+    margin: 16px 0;
+}
+
+#reserva .modal-footer .checkbox-style{
+    margin-bottom: 16px;
+}
+
+#reserva .modal-footer .checkbox-style #termo-check + label:before{
+    width: 40px;
+}
+
+/********************************FIM ESTILOS GERAIS********************************/
+
+.container-page .container-input{
+    width: 100%;
+    height: 24px;
+    padding: 0 30px;
+}
+    
+/*PAGINA LOGIN*/
+.page-login_register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 30px;
+}
+    
+header .area-logo{
+    width: 100%;
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: center;
+}
+    
+.area-logo img{
+    height: 100px;
+}
+    
+main .legend{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+    
+.legend{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+.legend>p:first-child{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Nunito ExtraBold', sans-serif;
+}
+    
+.legend>p:last-child{
+    font-size: 16px;
+    font-family: 'Nunito Regular 400', sans-serif;
+}
+    
+.page-login_register .input-group-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+    
+.page-login_register .input-group-container input:focus{
+    border-radius: 8px;
+    border: 1px solid #000;
+}
+    
+main .direction-link{
+    margin: 16px 0;
+}
+    
+main .right-position{
+    text-align: right;
+}
+    
+.right-position a{
+    font-family: 'Nunito SemiBold', sans-serif;
+    color: #000000;
+    text-decoration: none;
+}
+    
+main .dividing-line{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0;
+}
+    
+.dividing-line p{
+    background-color: #ffffff;
+    padding: 0 8px;
+    z-index: 1;
+}
+    
+.btn-alternative{
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    outline: none;
+    border: 1px solid #000000;
+}
+    
+.btn-alternative p{
+    font-family: 'Nunio Regular', sans-serif;
+    font-size: 20px;
+}
+    
+.btn-alternative .button-icon{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+    
+.btn-alternative .button-icon .google-icon{
+    height: 23px;
+}
+    
+footer.direction-link{
+    margin-top: 16px;
+}
+    
+.direction-link .center-position{
+    width: 100%;
+    font-family: 'Nunito Regular', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+}
+    
+.direction-link .center-position a{
+    font-family: 'Nunito SemiBold', sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+
+/*PÁGINA DE CADASTRO*/
+.terms-link{
+    display: flex;
+    font-family: 'Nunito Regular', sans-serif;
+    font-size: 16px;
+    margin: 16px 0;
+}
+    
+.terms-link>input{
+    margin-right: 12px;
+}
+    
+.terms-link a{
+    color: #000000;
+    text-decoration: underline;
+}
+
+.cad .input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #82AC9F;
+}
+
+.cad .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/*PAGINA HOME*/
+.page-home-container{
+    height: 100%;
+    position: relative;
+}
+
+.page-home-container header.container-header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #82ac9f;
+    background-image: linear-gradient(180deg, #82ac9f 49%, #ffffff 100%);
+    height: 296px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header.container-header .text-header{
+    width: 170px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+}
+
+header.container-header .text-header>p:first-child{
+    font-family: 'Nunito Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 0px;
+}
+
+header.container-header .text-header>p:last-child{
+    font-family: 'Nunito SemiBold', sans-serif;
+    line-height: 16px;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+header.container-header img{
+    width: 150px;
+    height: fit-content;
+}
+
+.page-home-container .container-content{
+    position: absolute;
+    top: 295px;
+    width: 100%;
+    height: calc(100% - 363px);
+    padding: 0 30px;
+    background-color: #fff;
+}
+
+.container-content section.services-opt{
+    height: calc(100% - 70px);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 120px 120px;
+    gap: 40px;
+}
+
+.services-opt .service-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #0000003f;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    
+}
+
+.services-opt .service-button a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #000;
+}
+
+.services-opt .service-button:nth-child(4) a p{
+    line-height: 16px;
+}
+
+section.query-area{
+    padding: 24px 30px;
+}
+
+section.query-area>p{
+    text-align: center;
+}
+
+section.query-area p a{
+    font-size: 16px;
+    color: #000000;
+}
+
+
+/*PAGINA PESQUISA*/
+.container-page .container-input .input-group .input-field{
+    padding-left: 56px;
+    border: 1px solid #00000067;
+}
+
+.button-left{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border: none;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.button-right{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border: none;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.container-event{
+    width: 100%;
+    height: calc(100% - 172px);
+    position: absolute;
+    top: 104px;
+}
+
+.container-event section{
+    padding: 24px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+main.container-event .init-info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+main.container-event .init-info img{
+    margin-top: 30px;
+    height: 75px;
+}
+
+.init-info .info-text>p:first-child{
+    text-align: center;
+    font-family: 'Nunito Bold', sans-serif;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.init-info .info-text>p:last-child{
+    text-align: center;
+    font-family: 'Nunito Regular', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+
+
+
+/*PAGINA RESULTADO PESQUISA*/
+.link-style{
+    text-decoration: none;
+    color: #000000;
+}
+
+.search-result>p:nth-child(1){
+    grid-area: medicine;
+    font-family: 'Nunito Bold', sans-serif;
+    font-size: 18px;
+}
+.search-result>p:nth-child(2){
+    grid-area: pharmacy;
+    font-family: 'Nunito Regular', sans-serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.search-result>p:nth-child(3){
+    grid-area: price;
+    font-family: 'Nunito ExtraBold', sans-serif;
+    font-size: 16px;
+}
+.search-result>span{
+    grid-area: link;
+    font-family: 'Nunito Regular', sans-serif;
+    font-size: 16px;
+    color: var(--button-color);
+    text-align: right;
+}
+
+.search-result{
+    display: grid;
+    grid-template-areas: 'medicine medicine'
+                         'pharmacy pharmacy'
+                         'price link';
+    border-radius: 8px;
+    border: 1px solid #0000004f;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    padding: 12px;
+}
+
+
+
+
+
+.modal-sort{
+    position: absolute;
+    top: 104px;
+    width: 100%;
+    height: 300px;
+    padding: 0 30px;
+    z-index: 100;
+    display: none;
+}
+
+.container-options{
+    border-radius: 0 0 8px 8px;
+}
+
+.button-option{
+    width: 100%;
+    height: 24px;
+    border: none;
+    background-color: #82AC9F;
+}
+
+.btn-border-top{
+    border-radius: 8px 8px 0 0;
+}
+
+.btn-border-bottom{
+    border-top: 1px solid #000000;
+    border-radius: 0 0 8px 8px;
+}
+
+.focus-button{
+    display: none;
+}
+
+
+
+
+
+
+/*PÁGINA FARMÁCIA*/
+.container-content{
+    width: 100%;
+    height: calc(100% - 124px);
+    position: absolute;
+    top: 56px;
+}
+
+section.pharmacy-selected{
+    position: relative;
+}
+
+.card-container{
+    padding: 12px;
+}
+
+.container-content .pharmacy-image{
+    position: absolute;
+    background-color: #b3aeae;
+    width: 100%;
+    height: 258px;
+    
+}
+
+.container-content .pharmacy-atributes{
+    position: absolute;
+    top: 258px;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.container-content .pharmacy-atributes .card-container{
+    margin-top: -30px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background-color: #82AC9F;
+}
+
+.card-container .card-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.card-head button{
+    width: 40px;
+    display: flex;
+    justify-content: right;
+    border:none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.card-head img{
+    display: block;
+    height: 28px;
+}
+
+.card-head p{
+    width: 100%;
+    font-family: 'Nunito Bold', sans-serif;
+    font-size: 20px;
+}
+
+.card-container .card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-body>div{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-body>div img:nth-child(1){
+    height: 16px;
+}
+
+.card-body>div p{
+    line-height: 16px;
+    font-family: 'Nunito Regular', sans-serif;
+    font-size: 16px;
+}
+
+.card-body>div p span{
+    font-family: 'Nunito Bold', sans-serif;
+}
+
+.card-container hr{
+    margin: 16px 0;
+}
+
+.card-container .card-footer{
+    margin-top: px;
+}
+
+.card-footer .search-result{
+    display: grid;
+    grid-template-areas: 'medicine medicine'
+                         'price status';
+    row-gap: 12px;
+    border-radius: 8px;
+    background-color: #ffffff7e;
+    padding-bottom: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.card-footer a{
+    text-decoration: none;
+}
+
+.card-footer .search-result>p:nth-child(1){
+    grid-area: medicine;
+    font-family: 'Nunito Bold', sans-serif;
+    font-size: 18px;
+    color: #000000;
+}
+.card-footer .search-result>p:nth-child(2){
+    grid-area: price;
+    font-family: 'Nunito ExtraBold', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+.card-footer .search-result>span{
+    grid-area: status;
+    height: fit-content;
+    font-family: 'Nunito Regular', sans-serif;
+    font-size: 16px;
+    text-align: right;
+    color: #126812;
+}
+
+
+.area-buttons{
+    width: 100%;
+    padding: 0 30px;
+    position: absolute;
+    top: 534px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.area-buttons .btn-alternative{
+    border: 1px solid #82AC9F;
+    font-family: 'Nunito ExtraBold', sans-serif;
+    font-size: 20px;
+}
+
+/************************** SLIDE DE OPÇÕES LATERAIS (tela de bula e tela de itens salvos) *********************************/
+.container-header .slide-options{
+    display: flex;
+    align-items: center;
+    height: 56px;
+    background-color: #ffffff;
+}
+
+.slide-options div{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    
+}
+
+.slide-options div:first-child{
+    border-bottom: 4px solid #82AC9F;
+    
+}
+
+.slide-options div p{
+    width: 100%;
+    position: absolute;
+    top:21px;
+    font-family: 'Nunito SemiBold', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.slide-content{
+    width: 100%;
+    height: calc(100% - 180px);
+    position: absolute;
+    top: 112px;
+    overflow-y: scroll;
+}
+.slide-content section{
+    padding: 24px 30px 0 30px;
+}
+
+/*TELA INFORMAÇÕES DO MEDICAMENTO*/
+.info-medicine{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 8px 8px;
+}
+
+.info-medicine .medicine-atributes{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 0;
+    border-bottom: 4px solid #000000;
+}
+
+.medicine-atributes>p:nth-child(1){
+    font-family: 'Nunito ExtraBold', sans-serif;
+    font-size: 16px;
+}
+
+.medicine-atributes>p:nth-child(1){
+    font-family: 'Nunito ExtraBold', sans-serif;
+    font-size: 16px;
+}
+
+.medicine-atributes>div{
+    display: flex;
+    gap: 6px;
+}
+
+.medicine-atributes>div p:first-child{
+    font-family: 'Nunito SemiBold', sans-serif;
+    font-size: 16px;
+}
+
+.info-medicine .medicine-presentation{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 0 0 8px 8px;
+    background-color: #82AC9F;
+}
+
+.medicine-presentation>div p:first-child{
+    font-family: 'Nunito SemiBold', sans-serif;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.medicine-presentation .medicine-table{
+    margin: 6px 0;
+}
+
+/*TELA TPOPICOS DA BULA*/
+.topic-bula .title-topic{
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+}
+
+.title-topic p{
+    width: 100%;
+    font-family: 'Nunito Bold', sans-serif;
+}
+
+.title-topic img{
+    display: block;
+    height: 24px;
+}
+
+.topic-bula .content-topic{
+    background-color: #82AC9F;
+    padding: 12px;
+    border-radius: 0 0 8px 8px;
+    display: none;
+}
+
+/*PAGINA ITENS SALVOS*/
+.saved-content .card-container{
+    border-radius: 8px;
+    border: 1px solid #82AC9F;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.warning-text p{
+    width: 100%;
+    text-align: center;
+    color: #000000ab;
+}
+
+
+/*PAGINA RESERVA DE MEDICAMENTOS*/
+.booking-page .input-group-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.booking-page .container-content{
+    display: flex;
+    align-items: center;
+}
+
+.booking-page .input-group-container .input-field{
+    padding: 0 16px;
+}
+.container-content .form-style{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 30px;
+}
+
+.container-content section>p{
+    font-family: 'Nunito Bold', sans-serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.container-content section.price-details .prices{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-content section.price-details .prices>div{
+    display: flex;
+}
+
+.price-details .prices>div p,
+.price-details .prices>div span{
+    width: 50%;
+    font-family: 'Nunito SemiBold', sans-serif;
+    font-size: 16px;
+}
+
+.price-details .prices>div span{
+    width: 50%;
+    text-align: right;
+    font-family: 'Nunito SemiBold', sans-serif;
+    font-size: 16px;
+}
+
+.price-details .prices>div:last-child{
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #000000;
+}
+
+.price-details .prices>div:last-child p,
+.price-details .prices>div:last-child span{
+    font-family: 'NunitoBold', sans-serif;
+    font-size: 17px;
+}
+
+.items .search-result{
+    display: grid;
+    grid-template-areas: 'medicine medicine'
+                         'price status';
+    row-gap: 12px;
+    border-radius: 8px;
+    background-color: #82ac9f4d;
+    padding-bottom: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.items a{
+    text-decoration: none;
+}
+
+.items .search-result>p:nth-child(1){
+    grid-area: medicine;
+    font-family: 'Nunito Bold', sans-serif;
+    font-size: 18px;
+    color: #000000;
+}
+.items .search-result>p:nth-child(2){
+    grid-area: price;
+    font-family: 'Nunito ExtraBold', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+.items .search-result>span{
+    grid-area: status;
+    height: fit-content;
+    font-family: 'Nunito Regular', sans-serif;
+    font-size: 16px;
+    text-align: right;
+    color: #126812;
+}
+
+
+/*PAGIMA PERFIL*/
+.container-page .profile-container{
+    width: 100%;
+    height: 232px;
+    padding: 12px 0;
+}
+
+.profile-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-picture {
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-atributes {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.user-atributes>p{
+    font-family: 'Nunito Bold', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.user-atributes div{
+    display: flex;
+    gap: 8px;
+}
+
+.user-atributes div>p{
+    font-family: 'Nunito Regular', sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+.user-atributes div>span{
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-atributes div>span{
+    width: 16px;
+}
+
+main.settings-container{
+    position: absolute;
+    top: 288px;
+    width: 100%;
+    padding: 24px 30px;
+    height: calc(100% - 356px);
+}
+
+.settings-container .settings-options{
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-container .settings-options>div{
+    height: 48px;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #000000;
+}
+
+.settings-container .settings-options>div:last-child{
+    border-bottom: none;
+}
